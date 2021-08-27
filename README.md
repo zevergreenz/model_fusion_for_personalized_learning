@@ -23,11 +23,16 @@ PYTHONPATH=/path/to/the/code/directory python movielens_experiment.py
 
 #### Sine Experiment
 
-- The code for running the sine experiment is in `experiments/sine_experiment.py`.
+- The code for running the sine regression experiment is in `experiments/sine_experiment.py`.
 
 #### Movie-Lens Experiment
 
 - The code for running the Movie-Lens recommendation experiment is in `experiments/movielens_experiment.py`.
+
+#### MNIST Experiment
+
+- The code for running the MNIST classification experiment is in `experiments/mnist_experiment.py`.
+- Before running the above experiment, you may want to create some pre-trained models using the script `experiments/mnist.py`.
 
 #### Meta Model implementation
 
