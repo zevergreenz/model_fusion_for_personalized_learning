@@ -82,7 +82,7 @@ for i in range(S_test.shape[0]):
     idx = metas[0].p_wu.pic[0].map(S_ast)
     Z_ast = metas[idx](S_ast, n_sample = 10, verbal = False, do_alignment = do_alignment).reshape(-1)
     for n_shot in [0, 1, 5, 10]:
-        model.load_state_dict(init_state_dict)
+        model.tensor_to_state_dict(Z_ast)
         if n_shot > 0:
             dataloader = prepare_data_loader(digits=digits, train=True, shots=n_shot)
             model.fine_tune(dataloader, n_steps=20)
